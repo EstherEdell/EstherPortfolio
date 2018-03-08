@@ -6,31 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:300,400|Montserrat:400,600,700" rel="stylesheet">
     <title>Esther Edell</title>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <nav class="headerNav">
-            <!-- <h1>Esther Edell</h1> -->
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="mainHeader wrapper">
+            <div class="logo">
+                <img src="assets/bracketLogo.png" alt="">
+            </div>
+            <nav class="headerNav">
+                <!-- <h1>Esther Edell</h1> -->
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <section class="headerHero" id="home">
-            <div class="headerBlurb">
-                <h1>Esther Edell</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur quod voluptatum minima perspiciatis in praesentium natus magni delectus, excepturi facere voluptate quis odio nisi possimus earum corrupti? Deserunt, qui nesciunt?</p>
+            <div class="headerText wrapper">
+                <div class="headerBlurb">
+                    <h1>Esther <br> <span>Edell</span></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit fugiat soluta dolore?</p>
+                </div>
+                <div>
+                    <!-- <img src="assets/close-brackets.png" alt=""> -->
+                </div>
             </div>
         </section>
     </header>
     <!-- MAIN -->
     <main>
         <!-- ABOUT ME -->
-        <section class="about" id="about">
+        <section class="about wrapper" id="about">
             <div class="mainAbout">
                 <h2>About Me</h2>
                 <img src="" alt="">
@@ -53,19 +65,34 @@
             </div>
         </section>
         <!-- PORTFOLIO PIECES -->
-        <section class="portfolio" id="portfolio">
+        <section class="portfolio wrapper" id="portfolio">
+            <div class="portfolioIntro">
+                <h2>Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vero?</p>
+            </div>
+            <div class="portfolioViewer">
 
+            </div>
             
         </section>
         <!-- CONTACT ME -->
         <section class="contact" id="contact">
-            <div class="contactInfo">
-                <div>
-
+            <div class="contactInfo wrapper">
+                <div class="contactBlurb">
+                    <h2>Contact Me</h2>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="contactIcons">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-medium-m"></i>
                 </div>
                 <div>
                     <form action="">
-
+                        <input type="text">
+                        <input type="email">
+                        <input type="textarea">
+                        <input type="submit">
                     </form>
                 </div>
             </div>
@@ -75,7 +102,9 @@
     </main>
     <!-- FOOTER -->
     <footer>
-
+        <div class="wrapper">
+            <span>(c) 2018 Esther Edell</span>
+        </div>
     </footer>
 
 </body>

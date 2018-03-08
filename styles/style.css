@@ -131,10 +131,75 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+header {
+  background: #fefefe; }
+
+.logo img {
+  max-width: 150px; }
+
 .headerHero {
-  background: url("/assets/markus-spiske-153926-unsplash.jpg");
-  height: 50vh;
+  min-height: 825px;
+  background: #F9545B;
+  height: 100%;
+  width: 100%; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 80px;
+  margin: 0;
+  letter-spacing: 10px;
+  font-weight: 700;
+  padding-top: 285px; }
+
+.headerBlurb span {
+  color: white;
+  font-weight: 400; }
+
+.headerBlurb p {
+  font-family: "Raleway", sans-serif;
+  width: 50%;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 300; }
+
+.headerText {
+  display: flex; }
+  .headerText img {
+    max-width: 175px;
+    padding-top: 300px; }
+
+.mainHeader {
+  display: flex; }
+
+.logo {
+  width: 50%; }
+
+.headerNav {
+  width: 50%; }
+  .headerNav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0; }
+  .headerNav li {
+    list-style-type: none;
+    padding: 45px 0; }
+  .headerNav a {
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+    color: #0E4675; }
+
+img {
+  display: block; }
+
+.wrapper {
+  max-width: 1100px;
   width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  margin: 0 auto; }
+
+h2 {
+  font-size: 60px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  text-align: center; }

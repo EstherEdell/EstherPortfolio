@@ -1,8 +1,75 @@
-.headerHero {
-    background:url('/assets/markus-spiske-153926-unsplash.jpg');
-    height:50vh;
-    width: 100%;
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+header {
+    background: #fefefe;
 }
+.logo img {
+    max-width:150px;
+}
+.headerHero {
+    // background:url('/assets/markus-spiske-153926-unsplash.jpg');
+    min-height:825px;
+    background:$red;
+    height:100%;
+    width: 100%;
+    // background-size:cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: $headerFont;
+    font-size:80px;
+    margin:0;
+    letter-spacing: 10px;
+    font-weight:700;
+    padding-top:285px;
+}
+
+.headerBlurb span {
+    color:white;
+    font-weight:400;
+}
+.headerBlurb p {
+    font-family:$bodyFont;
+    width:50%;
+    font-size:20px;
+    line-height: 38px;
+    font-weight: 300;
+    // color:rgb(20, 20, 20);
+}
+.headerText {
+    display: flex;
+    img {
+    max-width:175px;
+    padding-top:300px;
+    }
+}
+.mainHeader {
+    display:flex;
+}
+
+.logo {
+    width:50%;
+}
+.headerNav {
+    width:50%;
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding:0;
+    }
+    li {
+        list-style-type: none;
+        padding:45px 0;
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        font-size:13px;
+        font-family: $bodyFont;
+        color:$blue;
+
+    }
+}
+
+
+
