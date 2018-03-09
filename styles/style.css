@@ -226,6 +226,12 @@ h1 {
   grid-row-gap: 100px;
   text-align: center; }
 
+.porfolio img {
+  max-width: 400px; }
+
+.portfolioPiece {
+  display: flex; }
+
 .contact {
   background: #F9545B; }
 
