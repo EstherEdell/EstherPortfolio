@@ -1,0 +1,81 @@
+.mainAbout {
+    img {
+        max-width:200px;    
+        border-radius:50%;
+        box-shadow: 2px 1px 5px 0px rgba(10, 10, 10, 0.5);
+    }
+}
+.about {
+    padding-top:75px;
+    font-family: $bodyFont;
+    text-align: left;
+    font-weight: 300;
+    font-size:28px;
+    p {
+        padding-left:35px;
+        padding-top:40px;
+        margin:0;
+        line-height: 42px;
+    }
+}
+.aboutBlurb {
+    padding-top:75px;
+    display:flex;
+}
+
+.skills {
+    background:$green;
+    padding: 75px 0;
+    margin:100px 0;
+}
+
+.skillIcons {
+    // max-width:800px;
+    margin-top:100px;
+    font-size:72px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 100px;
+    text-align: center;
+}
+// .devicon-html5-plain {
+//     color:#e34f26;
+//     &:hover {
+//     }
+// }
+// .devicon-javascript-plain {
+//     color:#f7df1e;
+//     &:hover{
+//     }
+// }
+// .devicon-jquery-plain-wordmark {
+//     color:#0769ad;
+//     &:hover {
+//     }
+// }
+// .devicon-react-original{
+//     color:#00d8ff;  
+//     &:hover {
+//     }
+// }
+// .devicon-sass-original {
+//     &:hover{
+//         color:#CD669A;
+//     }
+// }
+
+// .devicon-css3-plain {
+//     &:hover {
+//         color:#264DE4;
+//     }
+// }
+// .devicon-github-plain {
+//     &:hover {
+//         color:#4078c0;
+//     }
+// }
+// .devicon-gulp-plain {
+//     &:hover {
+//         color:#E84C50;
+//     }
+// }

@@ -7,12 +7,12 @@ header {
 .headerHero {
     // background:url('/assets/markus-spiske-153926-unsplash.jpg');
     min-height:825px;
-    background:$red;
+    background-image:linear-gradient(135deg, rgba(254, 182, 146,0.9), rgba(234, 84, 85,0.9)), url('../assets/honeycomb.png');
     height:100%;
     width: 100%;
-    // background-size:cover;
-    // background-position: center;
-    // background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -30,11 +30,9 @@ h1 {
 }
 .headerBlurb p {
     font-family:$bodyFont;
-    width:50%;
-    font-size:20px;
+    font-size:24px;
     line-height: 38px;
     font-weight: 300;
-    // color:rgb(20, 20, 20);
 }
 .headerText {
     display: flex;

@@ -14,7 +14,14 @@ img {
 
 h2 {
     font-size:60px;
-    font-family:$bodyFont;
+    font-family:$mainFont;
     font-weight: 300;
     text-align: center;
+    margin:0;
+    position: relative;
+    &:before {
+        content:'//';
+        padding-right:10px;
+        
+    }
 }
