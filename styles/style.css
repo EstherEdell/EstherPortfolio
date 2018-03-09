@@ -226,6 +226,83 @@ h1 {
   grid-row-gap: 100px;
   text-align: center; }
 
+.contact {
+  background: #F9545B; }
+
+.contactInfo {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+
+.email {
+  text-align: center;
+  margin: 50px 0; }
+
+.email a {
+  font-family: "Raleway", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 5px; }
+
+.contactIcons {
+  font-size: 20px;
+  padding-top: 25px; }
+  .contactIcons ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0; }
+  .contactIcons li a {
+    margin: 10px;
+    padding: 10px;
+    color: white; }
+
+.twitter {
+  background: #1da1f2; }
+
+.linkedIn {
+  background: #0077b5; }
+
+.github {
+  background: #4078c0; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px; }
+  form input {
+    max-width: 630px;
+    min-height: 55px;
+    width: 100%;
+    border: 0px;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    background: rgba(255, 255, 255, 0.6); }
+
+.textArea {
+  padding-bottom: 165px;
+  padding-top: 20px; }
+
+.submit {
+  max-width: 170px;
+  background: transparent;
+  border: 5px solid white;
+  margin-top: 25px; }
+  .submit:hover {
+    background: white;
+    border: 5px solid #FF9690; }
+
+footer {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  font-size: 14px; }
+
 img {
   display: block; }
 
