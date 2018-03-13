@@ -18,5 +18,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery-smooth-scroll": "^2.2.0"
+  }
 }

@@ -1,6 +1,66 @@
-.porfolio img {
-    max-width: 400px;
-}
+
 .portfolioPiece {
     display:flex;
+    min-height:500px;
+    justify-content: space-around;
+    height:100%;
+    &:nth-child(odd) {
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+    a {
+        width:175px;
+        display:block;
+        padding:15px 20px;
+        text-decoration: none;
+        background:$red;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $bodyFont;
+        letter-spacing: 1px;
+        margin-bottom:15px;
+        &:hover {
+            background: $orange;
+        }
+        &:nth-of-type(1){
+        margin-right:10px;
+        }
+    }
+    img {
+        max-width:650px;
+        padding-right:25px;
+        // width:100%;
+    }
+}
+
+h3 {
+    font-family: $mainFont;
+    font-size: 28px; 
+    font-weight: 300;
+    margin:0;
+}
+.portfolioPiece p {
+    font-family: $bodyFont;
+    line-height: 28px;
+}
+.portfolioPiece p:nth-child(3) {
+    font-family: $mainFont;
+}
+
+.portfolioBlurb {
+    padding-top:50px;
+    max-width:350px;
+    
+}
+
+.portfolioLinks {
+    display:flex;
+    // justify-content: space-between;
+    
+}
+.portfolio {
+    max-width:800px;
+    width:100%;
+    margin:0 auto;
 }

@@ -5,6 +5,7 @@
 @import 'portfolio';
 @import 'contact';
 @import 'footer';
+@import 'responsive';
 
 img {
     display:block;
@@ -22,6 +23,7 @@ h2 {
     text-align: center;
     margin:0;
     position: relative;
+    padding-bottom:50px;
     &:before {
         content:'//';
         padding-right:10px;

@@ -1,27 +1,33 @@
 .mainAbout {
+    position: relative;
     img {
-        max-width:200px;    
-        border-radius:50%;
-        box-shadow: 2px 1px 5px 0px rgba(10, 10, 10, 0.5);
+        max-width:400px;   
+        
+        // border-radius:100%;
+        // box-shadow: 2px 1px 5px 0px rgba(10, 10, 10, 0.5);
     }
 }
+
 .about {
     padding-top:75px;
     font-family: $bodyFont;
     text-align: left;
     font-weight: 300;
     font-size:28px;
+    // background:$green;
     p {
         padding-left:35px;
         padding-top:40px;
         margin:0;
         line-height: 42px;
+        max-width: 500px;
     }
 }
 .aboutBlurb {
     padding-top:75px;
     display:flex;
 }
+
 
 .skills {
     background:$green;
@@ -38,44 +44,50 @@
     grid-row-gap: 100px;
     text-align: center;
 }
-// .devicon-html5-plain {
-//     color:#e34f26;
-//     &:hover {
-//     }
-// }
-// .devicon-javascript-plain {
-//     color:#f7df1e;
-//     &:hover{
-//     }
-// }
-// .devicon-jquery-plain-wordmark {
-//     color:#0769ad;
-//     &:hover {
-//     }
-// }
-// .devicon-react-original{
-//     color:#00d8ff;  
-//     &:hover {
-//     }
-// }
-// .devicon-sass-original {
-//     &:hover{
-//         color:#CD669A;
-//     }
-// }
+.whiteSquare {
+    width:100px;
+    height:100px;
+    background:white;
+    position: absolute;
+    bottom: -15%;
+    transform: rotate(45deg);
+    left: 46%;
+}
+.mainSkills {
+    position: relative;
+}
+.greenSquare {
+    width:100px;
+    height:100px;
+    background:$green;
+    position: absolute;
+    bottom: -20%;
+    transform: rotate(45deg);
+    left: 46%;
+}
+.portfolio {
+    position: relative;
+}
+.portfolioSquare {
+    position: absolute;
+    width:100px;
+    height:100px;
+    background:white;
+    bottom:-1%;
+    left:46%;
+    transform: rotate(45deg);
+    z-index: 9999;
+}
 
-// .devicon-css3-plain {
-//     &:hover {
-//         color:#264DE4;
-//     }
-// }
-// .devicon-github-plain {
-//     &:hover {
-//         color:#4078c0;
-//     }
-// }
-// .devicon-gulp-plain {
-//     &:hover {
-//         color:#E84C50;
-//     }
-// }
+.contact {
+    position: relative;
+}
+.contactSquare {
+    background:$green;
+    width:100px;
+    height:100px;
+    position: absolute;
+    bottom:-2%;
+    transform:rotate(45deg);
+    left:46%;
+}

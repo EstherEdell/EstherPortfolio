@@ -132,7 +132,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  background: #fefefe; }
+  background: #fefefe;
+  position: relative; }
 
 .logo img {
   max-width: 150px; }
@@ -190,12 +191,16 @@ h1 {
     display: block;
     font-size: 13px;
     font-family: "Raleway", sans-serif;
-    color: #0E4675; }
+    color: #0E4675;
+    padding: 10px;
+    border-bottom: 5px solid transparent; }
+    .headerNav a:hover {
+      border-bottom: 5px solid #9AE1D3; }
 
-.mainAbout img {
-  max-width: 200px;
-  border-radius: 50%;
-  box-shadow: 2px 1px 5px 0px rgba(10, 10, 10, 0.5); }
+.mainAbout {
+  position: relative; }
+  .mainAbout img {
+    max-width: 400px; }
 
 .about {
   padding-top: 75px;
@@ -207,7 +212,8 @@ h1 {
     padding-left: 35px;
     padding-top: 40px;
     margin: 0;
-    line-height: 42px; }
+    line-height: 42px;
+    max-width: 500px; }
 
 .aboutBlurb {
   padding-top: 75px;
@@ -226,22 +232,118 @@ h1 {
   grid-row-gap: 100px;
   text-align: center; }
 
-.porfolio img {
-  max-width: 400px; }
+.whiteSquare {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  bottom: -15%;
+  transform: rotate(45deg);
+  left: 46%; }
 
-.portfolioPiece {
-  display: flex; }
+.mainSkills {
+  position: relative; }
+
+.greenSquare {
+  width: 100px;
+  height: 100px;
+  background: #9AE1D3;
+  position: absolute;
+  bottom: -20%;
+  transform: rotate(45deg);
+  left: 46%; }
+
+.portfolio {
+  position: relative; }
+
+.portfolioSquare {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: white;
+  bottom: -1%;
+  left: 46%;
+  transform: rotate(45deg);
+  z-index: 9999; }
 
 .contact {
-  background: #F9545B; }
+  position: relative; }
+
+.contactSquare {
+  background: #9AE1D3;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -2%;
+  transform: rotate(45deg);
+  left: 46%; }
+
+.portfolioPiece {
+  display: flex;
+  min-height: 500px;
+  justify-content: space-around;
+  height: 100%; }
+  .portfolioPiece:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right; }
+  .portfolioPiece a {
+    width: 175px;
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    background: #F9545B;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px; }
+    .portfolioPiece a:hover {
+      background: #FF9690; }
+    .portfolioPiece a:nth-of-type(1) {
+      margin-right: 10px; }
+  .portfolioPiece img {
+    max-width: 650px;
+    padding-right: 25px; }
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0; }
+
+.portfolioPiece p {
+  font-family: "Raleway", sans-serif;
+  line-height: 28px; }
+
+.portfolioPiece p:nth-child(3) {
+  font-family: "Lato", sans-serif; }
+
+.portfolioBlurb {
+  padding-top: 50px;
+  max-width: 350px; }
+
+.portfolioLinks {
+  display: flex; }
+
+.portfolio {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto; }
+
+.contact {
+  background: #9AE1D3; }
 
 .contactInfo {
   padding-top: 100px;
   padding-bottom: 100px; }
 
+.emailSection {
+  background: #F9545B; }
+
 .email {
   text-align: center;
-  margin: 50px 0; }
+  padding: 125px 0; }
 
 .email a {
   font-family: "Raleway", sans-serif;
@@ -249,13 +351,11 @@ h1 {
   text-align: center;
   line-height: 30px;
   color: white;
-  text-decoration: none;
-  border-bottom: 3px solid white;
-  padding-bottom: 5px; }
+  border: 3px solid white;
+  padding: 15px 75px; }
 
 .contactIcons {
-  font-size: 20px;
-  padding-top: 25px; }
+  font-size: 20px; }
   .contactIcons ul {
     list-style-type: none;
     display: flex;
@@ -279,7 +379,8 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 40px; }
+  padding-top: 40px;
+  width: 100%; }
   form input {
     max-width: 630px;
     min-height: 55px;
@@ -289,7 +390,10 @@ form {
     text-align: center;
     font-size: 16px;
     font-family: "Raleway", sans-serif;
-    background: rgba(255, 255, 255, 0.6); }
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: 2px solid transparent; }
+    form input:focus {
+      border-bottom: 2px solid #0E4675; }
 
 .textArea {
   padding-bottom: 165px;
@@ -302,12 +406,131 @@ form {
   margin-top: 25px; }
   .submit:hover {
     background: white;
-    border: 5px solid #FF9690; }
+    border: 5px solid #0E4675; }
 
 footer {
   font-family: "Lato", sans-serif;
   text-align: center;
-  font-size: 14px; }
+  font-size: 14px;
+  background: #0E4675;
+  padding: 15px 0;
+  color: white;
+  line-height: 28px;
+  font-weight: 300; }
+  footer p {
+    margin: 0; }
+
+@media (max-width: 1000px) {
+  body .wrapper {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; }
+  .portfolio {
+    max-width: 600px; }
+  .portfolioPiece {
+    min-height: 400px; }
+    .portfolioPiece h3 {
+      font-size: 24px; }
+    .portfolioPiece p {
+      font-size: 14px; }
+    .portfolioPiece img {
+      max-width: 500px; }
+  .snack .portfolioBlurb {
+    padding-right: 25px; }
+  .skillIcons {
+    margin-top: 25px; } }
+
+@media (max-width: 850px) {
+  body .wrapper {
+    max-width: 700px; }
+  .mainAbout img {
+    max-width: 300px; }
+  .mainAbout p {
+    font-size: 22px; }
+  .skillIcons {
+    font-size: 58px; }
+  .portfolio {
+    max-width: 400px;
+    margin-bottom: 50px; }
+  .portfolioBlurb {
+    padding-top: 0px;
+    padding-right: 5px; }
+  .portfolioPiece {
+    display: block;
+    padding: 0;
+    margin-bottom: 75px;
+    text-align: right; }
+    .portfolioPiece:nth-child(odd) {
+      display: block;
+      text-align: left; }
+    .portfolioPiece img {
+      max-width: 400px; }
+  .snack {
+    padding: 0px; } }
+
+@media (max-width: 700px) {
+  body .wrapper {
+    max-width: 600px; }
+  form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto; }
+  body h2 {
+    font-size: 50px;
+    padding-bottom: 50px; }
+  body h1 {
+    font-size: 72px; }
+  .email a {
+    padding: 15px 40px;
+    font-size: 24px; } }
+
+@media (max-width: 450px) {
+  body .wrapper {
+    max-width: 350px; }
+  body h2 {
+    padding-bottom: 25px; }
+  .logo {
+    width: 40%; }
+  .logo img {
+    max-width: 100px; }
+  .headerNav li {
+    padding: 15px 0; }
+  .mainAbout img {
+    max-width: 200px; }
+  .mainAbout p {
+    font-size: 18px; }
+  form {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto; }
+  .email a {
+    padding: 15px 30px;
+    font-size: 20px; }
+  .skillIcons {
+    font-size: 42px; } }
+
+@media (max-width: 350px) {
+  body h2 {
+    font-size: 42px; }
+  .portfolioPiece img {
+    max-width: 300px; }
+  .portfolioLinks {
+    justify-content: center; }
+    .portfolioLinks a {
+      width: 125px;
+      font-size: 14px; }
+  .portfolioBlurb {
+    max-width: 300px;
+    padding-left: 20px; }
+  .mainAbout p {
+    font-size: 14px;
+    line-height: 24px; }
+  .headerNav a {
+    padding: 5px; }
+  header img {
+    max-width: 75px; }
+  form {
+    max-width: 300px; } }
 
 img {
   display: block; }
@@ -323,7 +546,8 @@ h2 {
   font-weight: 300;
   text-align: center;
   margin: 0;
-  position: relative; }
+  position: relative;
+  padding-bottom: 50px; }
   h2:before {
     content: '//';
     padding-right: 10px; }

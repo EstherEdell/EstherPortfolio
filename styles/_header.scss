@@ -1,11 +1,11 @@
 header {
     background: #fefefe;
+    position: relative;
 }
 .logo img {
     max-width:150px;
 }
 .headerHero {
-    // background:url('/assets/markus-spiske-153926-unsplash.jpg');
     min-height:825px;
     background-image:linear-gradient(135deg, rgba(254, 182, 146,0.9), rgba(234, 84, 85,0.9)), url('../assets/honeycomb.png');
     height:100%;
@@ -65,9 +65,15 @@ h1 {
         font-size:13px;
         font-family: $bodyFont;
         color:$blue;
+        padding:10px;
+        border-bottom: 5px solid transparent;
+        &:hover {
+            border-bottom:5px solid $green;
+        }
 
     }
 }
+
 
 
 

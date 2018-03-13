@@ -1,0 +1,166 @@
+@media (max-width:1000px) {
+    body .wrapper {
+        max-width: 800px;
+        width:100%;
+        margin:0 auto;
+    }
+    .portfolio {
+        max-width:600px;
+    }
+    .portfolioPiece {
+       min-height: 400px;
+        h3 {
+            font-size:24px;
+        }
+        p {
+            font-size:14px;
+        }
+        img {
+        max-width: 500px;
+        }
+    }
+    .snack .portfolioBlurb {
+        padding-right:25px;
+    }
+    .skillIcons {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width:850px) {
+    body .wrapper {
+        max-width:700px;
+    }
+    .mainAbout {
+        img {
+            max-width:300px;
+        }
+        p {
+            font-size: 22px;
+        }
+    }
+    .skillIcons {
+        font-size: 58px;
+    }
+    .portfolio {
+        max-width:400px;
+        margin-bottom:50px;
+    }
+    .portfolioBlurb {
+        padding-top:0px;
+        padding-right:5px;
+    }
+    .portfolioPiece {
+        display:block;
+        // border-bottom:5px solid $orange;
+        padding:0;
+        margin-bottom:75px;
+        text-align: right;
+        &:nth-child(odd) {
+            display:block;
+            text-align: left;
+        }
+        img {
+            max-width:400px;
+        }
+    }
+    .snack {
+        padding:0px;
+    }
+}
+
+@media (max-width:700px) {
+    body .wrapper {
+        max-width:600px;
+    }
+    form {
+        max-width: 600px;
+        width:100%;
+        margin:0 auto;
+    }
+    body h2 {
+        font-size:50px;
+        padding-bottom: 50px;
+    }
+    body h1 {
+        font-size:72px;
+    }
+    
+    .email a {
+        padding:15px 40px;
+        font-size: 24px;
+    }
+}
+
+@media (max-width:450px) {
+  
+    body .wrapper {
+        max-width:350px;
+    }
+    body h2 {
+        padding-bottom: 25px;
+    }
+    .logo {
+        width:40%;
+    }
+    .logo img {
+        max-width:100px;
+    }
+    .headerNav li {
+        padding: 15px 0;
+    }
+    .mainAbout {
+        img {
+            max-width:200px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    form {
+        max-width: 350px;
+        width:100%;
+        margin:0 auto;
+    }
+    .email a {
+        padding: 15px 30px;
+        font-size:20px;
+    }
+    .skillIcons {
+        font-size: 42px;
+    }
+}
+@media (max-width:350px) {
+    body h2 {
+        font-size: 42px;
+    }
+    .portfolioPiece img {
+        max-width:300px;
+    }
+    .portfolioLinks {
+        justify-content: center;
+     a {
+        width:125px;
+        font-size: 14px;
+        }
+    }
+    .portfolioBlurb {
+        max-width: 300px;
+        padding-left: 20px;
+    }
+
+    .mainAbout p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .headerNav a {
+        padding:5px;
+    }
+    header img {
+        max-width: 75px;
+    }
+    form {
+        max-width:300px;
+    }
+    
+}

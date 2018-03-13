@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>Esther Edell</title>
+    <link rel="icon" type="image/png" href="assets/bracketLogo.png">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Raleway:300,400|Montserrat:400,600,700" rel="stylesheet">
-    <title>Esther Edell</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
 </head>
 <body>
     <!-- HEADER -->
@@ -18,7 +21,7 @@
                 <img src="assets/bracketLogo.png" alt="">
             </div>
             <nav class="headerNav">
-                <!-- <h1>Esther Edell</h1> -->
+                
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -43,12 +46,16 @@
             <div class="mainAbout wrapper">
                 <h2>About Me</h2>
                 <div class="aboutBlurb">
-                    <div>
+                    <div class="myPhoto">
                         <img src="assets/squareHeadshot.jpg" alt="">
+
                     </div>
                     <div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatibus doloribus odit amet maiores aspernatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sapiente earum?</p>
+                        <p>Hi! I'm Esther, a Toronto-based Web Developer and graduate of HackerYou's Web Development Immersive program. </p>
                     </div>
+                </div>
+                <!-- <div class="whiteSquare"> -->
+    
                 </div>
             </div>
             <div class="skills">
@@ -64,42 +71,88 @@
                         <i class="devicon-github-plain"></i>
                         <i class="devicon-gulp-plain"></i>
                     </div>      
+                    <!-- <div class="greenSquare"></div> -->
                 </div>
             </div>
         </section>
         <!-- PORTFOLIO PIECES -->
-        <section class="portfolio wrapper" id="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="portfolioIntro">
                 <h2>Portfolio</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, vero?</p>
             </div>
             <div class="portfolioViewer">
                 <div>
                     
                 </div>
-                <div class="portfolioPiece">
+                <div class="portfolioPiece booze">
                     <div>
                         <img src="assets/booze-studio.png" alt="">
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo porro deleniti modi laboriosam odio autem.</p>
+                    <div class="portfolioBlurb">
+                        <h3>Booze Studio</h3>
+                        <p>Using the LCBO and MusixMatch API, we use a quiz to determine the user's ideal karaoke song and liquid courage drink of choice</p>
+                        <p>HTML // Sass // JQuery // JavaScript // Pair Programming // API // Responsive </p>
+                        <div class="portfolioLinks">
+                            <a href="https://github.com/EstherEdell/dudell">GitHub</a>
+                            <a href="https://estheredell.github.io/dudell/">View Live</a>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <img src="assets/genius.png" alt="">
+                <div class="portfolioPiece genius">
+                    <div>
+                        <img src="assets/genius.png" alt="">
+                    </div>
+                    <div class="portfolioBlurb">
+                        <h3>Genius</h3>
+                        <p>A single page PSD conversion</p>
+                        <p>HTML // CSS // Responsive </p>
+                        <div class="portfolioLinks">
+                            <a href="https://github.com/EstherEdell/genius-conversion">GitHub</a>
+                            <a href="https://estheredell.github.io/genius-conversion/">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioPiece lovin">
+                    <div>
+                        <img src="assets/lovin.png" alt="">
+                        
+                    </div>
+                    <div class="portfolioBlurb">
+                        <h3>Lovin' Ipsum</h3>
+                        <p>A cheeky app that allows the user to generate a short bio for their online dating app of choice.</p>
+                        <p>HTML // Sass // Responsive // jQuery // JavaScript  </p>
+                        <div class="portfolioLinks">
+                            <a href="https://github.com/EstherEdell/lovin-ipsum">GitHub</a>
+                            <a href="https://estheredell.github.io/lovin-ipsum/">View Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolioPiece snack">
+                    <div>
+                        <img src="assets/SnackerYou.png" alt="">
+                    </div>
+                    <div class="portfolioBlurb">
+                        <h3>SnackerYou</h3>
+                        <p>Using the Google Maps and Zomato APIs, we created a website that allows a user to find a restaurant based on their selected location.</p>
+                        <p>HTML // Sass // Responsive // React // Firebase </p>
+                        <div class="portfolioLinks">
+                            <a href="https://github.com/EstherEdell/SnackerYou">GitHub</a>
+                            <a href="https://dude-wheres-my-food.firebaseapp.com/">View Live</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- <div class="portfolioSquare"></div> -->
             
         </section>
         <!-- CONTACT ME -->
+        
         <section class="contact" id="contact">
             <div class="contactInfo wrapper">
                 <div class="contactBlurb">
                     <h2>Contact Me</h2>
                 </div>
-                <div class="email">
-                    <a href="mailto:esther@estheredell.com" target="_top" >esther [ at ] estheredell.com</a>
-                </div>
+                
                 <div class="contactIcons">
                     <ul>
                         <li>
@@ -121,13 +174,19 @@
                     </ul>
                 </div>
                 <div>
-                    <form action="">
-                        <input type="text" placeholder="Name">
-                        <input type="email" placeholder="Email">
-                        <input type="textarea" placeholder="Message" class="textArea">
+                    <form action="https://formspree.io/esther@estheredell.com" method="POST">
+                        <input type="text" placeholder="Name" name="name">
+                        <input type="email" placeholder="Email" name="email">
+                        <input type="textarea" placeholder="Message" class="textArea" name="message">
                         <input type="submit" value="Send" class="submit">
                     </form>
                 </div>
+            <!-- <div class="contactSquare"></div>     -->
+            </div>
+        </section>
+        <section class="emailSection">
+            <div class="email">
+                <a href="mailto:esther@estheredell.com" target="_top">esther [ at ] estheredell.com</a>
             </div>
         </section>
 
@@ -136,10 +195,14 @@
     <!-- FOOTER -->
     <footer>
         <div class="wrapper">
-            <p>(c) 2018 Esther Edell</p>
+            <p>© 2018 Esther Edell</p>
             <p>Photo Credit: Pam Lau</p>
         </div>
     </footer>
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
 
+<script src="styles/script.js"></script>
 </body>
 </html>
