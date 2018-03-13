@@ -3,11 +3,15 @@
     img {
         max-width:400px;   
         
+        // float:left;
         // border-radius:100%;
         // box-shadow: 2px 1px 5px 0px rgba(10, 10, 10, 0.5);
     }
 }
-
+.myPhoto {
+    float:left;
+    padding-right:40px;
+}
 .about {
     padding-top:75px;
     font-family: $bodyFont;
@@ -17,15 +21,16 @@
     // background:$green;
     p {
         padding-left:42px;
-        padding-top:40px;
+        // padding-top:40px;
         margin:0;
         line-height: 42px;
-        max-width: 500px;
+        // max-width: 500px;
+        flex-wrap: wrap;
     }
 }
 .aboutBlurb {
     padding-top:75px;
-    display:flex;
+    // display:flex;
 }
 
 
