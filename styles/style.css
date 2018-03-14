@@ -139,7 +139,7 @@ header {
   max-width: 150px; }
 
 .headerHero {
-  min-height: 825px;
+  min-height: 700px;
   background-image: linear-gradient(135deg, rgba(254, 182, 146, 0.9), rgba(234, 84, 85, 0.9)), url("../assets/honeycomb.png");
   height: 100%;
   width: 100%;
@@ -153,7 +153,7 @@ h1 {
   margin: 0;
   letter-spacing: 10px;
   font-weight: 700;
-  padding-top: 285px; }
+  padding-top: 250px; }
 
 .headerBlurb span {
   color: white;
@@ -172,6 +172,7 @@ h1 {
     padding-top: 300px; }
 
 .mainHeader {
+  max-height: 150px;
   display: flex; }
 
 .logo {
@@ -191,7 +192,7 @@ h1 {
     display: block;
     font-size: 13px;
     font-family: "Raleway", sans-serif;
-    color: #0E4675;
+    color: black;
     padding: 10px;
     border-bottom: 5px solid transparent; }
     .headerNav a:hover {
@@ -200,11 +201,13 @@ h1 {
 .mainAbout {
   position: relative; }
   .mainAbout img {
-    max-width: 400px; }
+    max-width: 400px;
+    width: 100%; }
 
 .myPhoto {
   float: left;
-  padding-right: 40px; }
+  padding-right: 40px;
+  position: relative; }
 
 .about {
   padding-top: 75px;
@@ -214,6 +217,7 @@ h1 {
   font-size: 24px; }
   .about p {
     padding-left: 42px;
+    padding-top: 100px;
     margin: 0;
     line-height: 42px;
     flex-wrap: wrap; }
@@ -227,12 +231,13 @@ h1 {
   margin: 100px 0; }
 
 .skillIcons {
-  margin-top: 100px;
-  font-size: 72px;
+  margin-top: 75px;
+  font-size: 68px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-row-gap: 100px;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 25px; }
 
 .whiteSquare {
   width: 100px;
@@ -375,7 +380,7 @@ h3 {
   background: #0077b5; }
 
 .github {
-  background: #4078c0; }
+  background: #333; }
 
 form {
   display: flex;
@@ -453,7 +458,8 @@ footer {
       padding-right: 10px; }
   .mainAbout p {
     font-size: 22px;
-    padding-left: 10px; }
+    padding-left: 10px;
+    padding-top: 50px; }
   .skillIcons {
     font-size: 58px; }
   .portfolio {
