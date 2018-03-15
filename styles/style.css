@@ -198,29 +198,28 @@ h1 {
     .headerNav a:hover {
       border-bottom: 5px solid #9AE1D3; }
 
-.mainAbout {
-  position: relative; }
-  .mainAbout img {
-    max-width: 400px;
-    width: 100%; }
-
 .myPhoto {
-  float: left;
-  padding-right: 40px;
-  position: relative; }
+  position: relative;
+  float: left; }
+  .myPhoto img {
+    max-width: 375px;
+    width: 100%;
+    padding-right: 15px;
+    -webkit-clip-path: polygon(20% 0, 95% 0, 77% 100%, 0 100%);
+    clip-path: polygon(20% 0, 95% 0, 77% 100%, 0 100%); }
 
 .about {
   padding-top: 75px;
   font-family: "Raleway", sans-serif;
   text-align: left;
   font-weight: 300;
-  font-size: 24px; }
+  font-size: 20px; }
   .about p {
+    max-width: 950px;
     padding-left: 42px;
-    padding-top: 100px;
+    padding-top: 80px;
     margin: 0;
-    line-height: 42px;
-    flex-wrap: wrap; }
+    line-height: 42px; }
 
 .aboutBlurb {
   padding-top: 75px; }
@@ -231,13 +230,11 @@ h1 {
   margin: 100px 0; }
 
 .skillIcons {
-  margin-top: 75px;
   font-size: 68px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 100px;
   text-align: center;
   padding-bottom: 25px; }
+  .skillIcons i {
+    padding: 15px; }
 
 .whiteSquare {
   width: 100px;

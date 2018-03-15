@@ -5,7 +5,7 @@ $(document).ready(function() {
       reset:true,
       duration:500,
       origin:'bottom',
-      delay: 250
+      delay: 225
   });
   sr.reveal('.booze');
   sr.reveal('.genius');
