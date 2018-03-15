@@ -149,6 +149,11 @@
             float:right;
         }
     }
+    .aboutBlurb {
+        a{
+            margin-left:50px;
+        }
+    }
     .myPhoto {
         padding-left: 50px;
     }
@@ -171,6 +176,10 @@
     }
     body h2 {
         font-size: 42px;
+    }
+    .aboutBlurb a {
+        font-size:14px;
+        margin-left: 25px;
     }
     .portfolioPiece img {
         max-width:300px;

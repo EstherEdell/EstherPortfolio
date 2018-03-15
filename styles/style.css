@@ -223,6 +223,16 @@ h1 {
 
 .aboutBlurb {
   padding-top: 75px; }
+  .aboutBlurb a {
+    text-decoration: none;
+    color: #F9545B;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 5px solid #F9545B;
+    display: inline-block; }
 
 .skills {
   background: #9AE1D3;
@@ -525,6 +535,8 @@ footer {
   .mainAbout p {
     font-size: 18px;
     float: right; }
+  .aboutBlurb a {
+    margin-left: 50px; }
   .myPhoto {
     padding-left: 50px; }
   form {
@@ -542,6 +554,9 @@ footer {
     max-width: 325px; }
   body h2 {
     font-size: 42px; }
+  .aboutBlurb a {
+    font-size: 14px;
+    margin-left: 25px; }
   .portfolioPiece img {
     max-width: 300px; }
   .portfolioLinks {
