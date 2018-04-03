@@ -217,22 +217,9 @@ h1 {
   .about p {
     max-width: 950px;
     padding-left: 42px;
-    padding-top: 80px;
+    padding-top: 24px;
     margin: 0;
     line-height: 42px; }
-
-.aboutBlurb {
-  padding-top: 75px; }
-  .aboutBlurb a {
-    text-decoration: none;
-    color: #F9545B;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    text-transform: uppercase;
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: 5px solid #F9545B;
-    display: inline-block; }
 
 .skills {
   background: #9AE1D3;
@@ -296,7 +283,8 @@ h1 {
   display: flex;
   min-height: 500px;
   justify-content: space-around;
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 100px; }
   .portfolioPiece:nth-child(odd) {
     flex-direction: row-reverse;
     text-align: right; }
@@ -317,8 +305,7 @@ h1 {
     .portfolioPiece a:nth-of-type(1) {
       margin-right: 10px; }
   .portfolioPiece img {
-    max-width: 650px;
-    padding-right: 25px; }
+    max-width: 700px; }
 
 h3 {
   font-family: "Lato", sans-serif;
@@ -531,10 +518,11 @@ footer {
     padding: 15px 0; }
   .mainAbout img {
     max-width: 200px;
-    padding-bottom: 25px; }
+    width: auto; }
   .mainAbout p {
     font-size: 18px;
-    float: right; }
+    float: right;
+    text-align: justify; }
   .aboutBlurb a {
     margin-left: 50px; }
   .myPhoto {
@@ -554,9 +542,8 @@ footer {
     max-width: 325px; }
   body h2 {
     font-size: 42px; }
-  .aboutBlurb a {
-    font-size: 14px;
-    margin-left: 25px; }
+  header img {
+    max-width: 75px; }
   .portfolioPiece img {
     max-width: 300px; }
   .portfolioLinks {
@@ -572,8 +559,6 @@ footer {
     line-height: 24px; }
   .headerNav a {
     padding: 5px; }
-  header img {
-    max-width: 75px; }
   form {
     max-width: 300px; } }
 
