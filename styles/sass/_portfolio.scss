@@ -1,4 +1,14 @@
-
+.portfolioIntro {
+    p {
+        text-align: center;
+        font-size: 16px;
+        font-family: $bodyFont;
+        margin-top: 0;
+        margin-bottom: 40px;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 .portfolioPiece {
     display:flex;
     min-height:500px;
