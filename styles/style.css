@@ -298,9 +298,13 @@ h1 {
 .about p {
   max-width: 950px;
   padding-left: 42px;
-  padding-top: 24px;
+  padding-top: 18px;
   margin: 0;
-  line-height: 42px;
+  line-height: 2;
+}
+
+.about p:first-of-type {
+  padding-top: 0;
 }
 
 .skills {
@@ -635,9 +639,8 @@ footer p {
     padding-right: 10px;
   }
   .mainAbout p {
-    font-size: 22px;
+    font-size: 20px;
     padding-left: 10px;
-    padding-top: 50px;
   }
   .skillIcons {
     font-size: 58px;

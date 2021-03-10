@@ -23,9 +23,12 @@ clip-path: polygon(20% 0, 95% 0, 77% 100%, 0 100%);
     p {
         max-width: 950px;
         padding-left:42px;
-        padding-top:24px;
+        padding-top:18px;
         margin:0;
-        line-height: 42px;
+        line-height: 2;
+        &:first-of-type {
+            padding-top: 0;
+        }
     }
 }
 // .aboutBlurb {
