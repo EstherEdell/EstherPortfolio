@@ -25,9 +25,13 @@ clip-path: polygon(20% 0, 95% 0, 77% 100%, 0 100%);
         padding-left:42px;
         padding-top:18px;
         margin:0;
-        line-height: 2;
+        line-height: 1.8;
         &:first-of-type {
             padding-top: 0;
+        }
+        a {
+            color: black;
+            font-weight: bold;
         }
     }
 }
